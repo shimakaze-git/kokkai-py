@@ -5,7 +5,7 @@
 import pytest
 
 
-from kokkai_py import kokkai_py
+# from kokkai_py import kokkai_py
 
 
 @pytest.fixture
