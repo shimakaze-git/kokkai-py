@@ -1,10 +1,9 @@
 from datetime import datetime, date
-# from copy import copy
 
 from typing import List, Dict, Optional
 
 
-class SpeechRecord():
+class MeetingRecord():
     def __init__(self, raw: Dict):
         """[summary]
 
@@ -93,24 +92,6 @@ class SpeechRecord():
         self.name_of_house = self._raw["nameOfHouse"]
         self.name_of_meeting = self._raw["nameOfMeeting"]
 
-        self.issue = self._raw["issue"]
-        self.closing = self._raw["closing"]
-        self.speech_order = self._raw["speechOrder"]
-
-        # 発言者所属会派
-        self.speaker_group = self._raw["speakerGroup"]
-
-        # 発言者の肩書き
-        self.speaker_position = self._raw["speakerPosition"]
-
-        # 発言者の役割
-        self.speaker_role = self._raw["speakerRole"]
-
-        self.start_page = self._raw["startPage"]
-        self.speech_url = self._raw["speechURL"]
-        self.meeting_url = self._raw["meetingURL"]
-        self.pdf_url = self._raw["pdfURL"]
-
     def _set_to_json(self):
         keys = [
             k for k in vars(self).keys() if not (k[0] == "_")
@@ -122,8 +103,7 @@ class SpeechRecord():
         return self._json
 
 
-class SpeechRecordList():
-
+class MeetingRecordList():
     def __init__(self, results: Dict):
         """[summary]
 
@@ -136,10 +116,8 @@ class SpeechRecordList():
 
         self._results = results
 
-        self.record_list: List[SpeechRecord] = []
-        self.speech_list: List[str] = []
-
-        self._caches_record_list: List[SpeechRecord] = []
+        self.record_list: List[MeetingRecord] = []
+        self.meeting_list: List[str] = []
 
         self.number_of_records = 0
         self.number_of_return = 0
@@ -159,27 +137,25 @@ class SpeechRecordList():
         self.start_record = self._results["startRecord"]
         self.next_record_position = self._results["nextRecordPosition"]
 
-        if self.number_of_return > 0:
-            speech_records = self._results["speechRecord"]
+        meeting_records = self._results["meetingRecord"]
 
-            # speech_record
-            self.record_list = [
-                self._create_speech_record(s) for s in speech_records
-            ]
+        # meeting_records
+        self.record_list = [
+            self._create_meeting_record(m) for m in meeting_records
+        ]
+        # print(self.speech_list)
 
-            # print(self.speech_list)
-            # self._caches_record_list = copy(self.record_list)
-
-    def _create_speech_record(self, speech_record: Dict) -> SpeechRecord:
+    def _create_meeting_record(self, meeting_record: Dict) -> MeetingRecord:
         """[summary]
 
         Args:
             speech_record (Dict): [description]
 
         Returns:
-            SpeechRecord: [description]
+            MeetingRecord: [description]
         """
-        speech_object = SpeechRecord(speech_record)
-        self.speech_list.append(speech_object.speech)
 
-        return speech_object
+        meeting_object = MeetingRecord(meeting_record)
+        # self.meeting_list.append(meeting_object.speech)
+
+        return meeting_object

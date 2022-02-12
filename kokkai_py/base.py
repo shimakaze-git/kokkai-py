@@ -20,6 +20,10 @@ class KokkaiBase:
     def query(self, params=Dict) -> str:
 
         params = {**params, **self.PARAMS}
+        params = {
+            key: params[key] for key in params if params[key]
+        }
+
         query = '&'.join(
             ['{}={}'.format(key, value) for key, value in params.items()]
         )
