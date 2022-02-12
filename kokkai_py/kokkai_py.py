@@ -16,25 +16,31 @@ class Kokkai(KokkaiBase):
         self.speech_records: Optional[SpeechRecordList] = None
         self.meeting_records: Optional[MeetingRecordList] = None
 
-    def speech(
-        self, comment="", speaker="", start=1, maximum=100
-    ) -> List[str]:
+    def speech(self, comment="", speaker="", maximum=100, start=1, position=1) -> List[str]:
+        # print("---" * 30)
+
+        start_pos = start + (maximum * (position - 1))
+        # print("start_pos", start_pos, start, position, maximum * (position - 1))
+
+        speech_list = []
 
         params = {
             'any': comment,
             'speaker': speaker,
-            'startRecord': start,
+            'startRecord': start_pos,
             'maximumRecords': maximum,
         }
-        query = self.query(params)
+        if self.check_number_of_records(params):
+            query = self.query(params)
+            path = "speech" + query
 
-        path = "speech" + query
-        response = self.request(path)
-        results = self.convert_to_dict(response)
+            response = self.request(path)
+            results = self.convert_to_dict(response)
 
-        self.speech_records = SpeechRecordList(results)
+            self.speech_records = SpeechRecordList(results)
+            speech_list = self.speech_records.speech_list
 
-        return self.speech_records.speech_list
+        return speech_list
 
     def meeting(self):
         params = {
@@ -60,16 +66,12 @@ class Kokkai(KokkaiBase):
             print("speech_listには値が入っていません")
             return None
 
-        # return []
-
-        for i, r in enumerate(self.speech_records.record_list):
+        for _, r in enumerate(self.speech_records.record_list):
             if r.speaker_group is None:
                 # print("None", None, r.speaker)
                 if speaker_group is None:
-                    print("None", r.speaker)
+                    self.speech_records._caches_record_list.append(r)
             else:
                 if speaker_group in r.speaker_group:
                     self.speech_records._caches_record_list.append(r)
-
         return self.speech_records._caches_record_list
-        # print("self.speech_records.speech_list", self.speech_records.record_list)

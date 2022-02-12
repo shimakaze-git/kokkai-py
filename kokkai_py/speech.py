@@ -125,7 +125,7 @@ class SpeechRecord():
 class SpeechRecordList():
 
     def __init__(self, results: Dict):
-        """[summary]
+        """
 
         Args:
             results (Dict): [description]
@@ -183,3 +183,6 @@ class SpeechRecordList():
         self.speech_list.append(speech_object.speech)
 
         return speech_object
+
+    def add_results(self, results: Dict):
+        pass

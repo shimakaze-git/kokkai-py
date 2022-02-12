@@ -42,3 +42,17 @@ def test_speaker_group():
     print("number_of_records", kokkai.speech_records.number_of_records)
     speech_records = kokkai.speech_speaker_group("自由民主党")
     print("speech_records", speech_records)
+
+def test_position():
+    comment = "プログラミング"
+    kokkai = Kokkai()
+    kokkai.speech(comment=comment)
+    print("1", kokkai.speech_records.next_record_position)
+
+    for i in range(1, 5):
+        speech_list = kokkai.speech(comment=comment, position=i)
+        print("{}".format(i), len(speech_list))
+
+    # print("number_of_records", kokkai.speech_records.number_of_records)
+    # speech_records = kokkai.speech_speaker_group("自由民主党")
+    # print("speech_records", speech_records)

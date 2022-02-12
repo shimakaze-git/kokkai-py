@@ -18,7 +18,11 @@ kokkai-py
      :target: https://pyup.io/repos/github/shimakaze-git/kokkai_py/
      :alt: Updates
 
+* https://qiita.com/kenta1984/items/1acfddb3d920a11e6c8b
 
+* 国会での発言回数
+* 国会での発言内容
+* 政治家相関関係
 
 Python Boilerplate contains all the boilerplate you need to create a Python package.
 

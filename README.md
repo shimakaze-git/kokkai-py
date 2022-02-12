@@ -1,1 +1,0 @@
-# kokkai-py
