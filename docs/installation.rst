@@ -8,13 +8,13 @@ Installation
 Stable release
 --------------
 
-To install kokkai-py, run this command in your terminal:
+To install kokkai, run this command in your terminal:
 
 .. code-block:: console
 
-    $ pip install kokkai_py
+    $ pip install kokkai
 
-This is the preferred method to install kokkai-py, as it will always install the most recent stable release.
+This is the preferred method to install kokkai, as it will always install the most recent stable release.
 
 If you don't have `pip`_ installed, this `Python installation guide`_ can guide
 you through the process.
@@ -26,19 +26,19 @@ you through the process.
 From sources
 ------------
 
-The sources for kokkai-py can be downloaded from the `Github repo`_.
+The sources for kokkai can be downloaded from the `Github repo`_.
 
 You can either clone the public repository:
 
 .. code-block:: console
 
-    $ git clone git://github.com/shimakaze-git/kokkai_py
+    $ git clone git://github.com/shimakaze-git/kokkai
 
 Or download the `tarball`_:
 
 .. code-block:: console
 
-    $ curl -OJL https://github.com/shimakaze-git/kokkai_py/tarball/master
+    $ curl -OJL https://github.com/shimakaze-git/kokkai/tarball/master
 
 Once you have a copy of the source, you can install it with:
 
@@ -47,5 +47,5 @@ Once you have a copy of the source, you can install it with:
     $ python setup.py install
 
 
-.. _Github repo: https://github.com/shimakaze-git/kokkai_py
-.. _tarball: https://github.com/shimakaze-git/kokkai_py/tarball/master
+.. _Github repo: https://github.com/shimakaze-git/kokkai
+.. _tarball: https://github.com/shimakaze-git/kokkai/tarball/master

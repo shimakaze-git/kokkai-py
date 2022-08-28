@@ -5,7 +5,7 @@ Credits
 Development Lead
 ----------------
 
-* shimakaze-git <audreyr@example.com>
+* shimakaze_soft <audreyr@example.com>
 
 Contributors
 ------------

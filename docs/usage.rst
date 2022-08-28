@@ -2,6 +2,6 @@
 Usage
 =====
 
-To use kokkai-py in a project::
+To use kokkai in a project::
 
-    import kokkai_py
+    import kokkai

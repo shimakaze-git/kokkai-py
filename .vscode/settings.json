@@ -1,0 +1,43 @@
+{
+  "python.languageServer": "Pylance",
+  // "python.autoComplete.extraPaths": [],
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.typeCheckingMode": "strict",
+  "python.analysis.diagnosticMode": "workspace",
+  "python.analysis.extraPaths": [
+    // "./.venv/lib/python3.9/site-packages/",
+  ],
+  // Linter(flake8)
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.pycodestyleEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": [
+    "--ignore=E111, E114, E402, E501"
+  ],
+  // Formatter(autopep8)
+  "python.formatting.provider": "autopep8",
+  "python.formatting.autopep8Args": [
+    "--indent-size=4",
+    "--max-line-length",
+    "160",
+    "--ignore=E111, E114, E402, E501"
+  ],
+  // pylance settings
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportUnusedImport": "information",
+    "reportMissingImports": "information",
+    "reportUnknownMemberType": "information",
+    "reportOptionalCall": "information"
+  },
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "vsintellicode.java.completionsEnabled": false,
+}

@@ -1,4 +1,4 @@
-Welcome to kokkai-py's documentation!
+Welcome to kokkai's documentation!
 ======================================
 
 .. toctree::

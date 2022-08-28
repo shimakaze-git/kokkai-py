@@ -1,21 +1,21 @@
-=========
-kokkai-py
-=========
+======
+kokkai
+======
 
 
-.. image:: https://img.shields.io/pypi/v/kokkai_py.svg
-        :target: https://pypi.python.org/pypi/kokkai_py
+.. image:: https://img.shields.io/pypi/v/kokkai.svg
+        :target: https://pypi.python.org/pypi/kokkai
 
-.. image:: https://img.shields.io/travis/shimakaze-git/kokkai_py.svg
-        :target: https://travis-ci.com/shimakaze-git/kokkai_py
+.. image:: https://img.shields.io/travis/shimakaze-git/kokkai.svg
+        :target: https://travis-ci.com/shimakaze-git/kokkai
 
-.. image:: https://readthedocs.org/projects/kokkai-py/badge/?version=latest
-        :target: https://kokkai-py.readthedocs.io/en/latest/?version=latest
+.. image:: https://readthedocs.org/projects/kokkai/badge/?version=latest
+        :target: https://kokkai.readthedocs.io/en/latest/?version=latest
         :alt: Documentation Status
 
 
-.. image:: https://pyup.io/repos/github/shimakaze-git/kokkai_py/shield.svg
-     :target: https://pyup.io/repos/github/shimakaze-git/kokkai_py/
+.. image:: https://pyup.io/repos/github/shimakaze-git/kokkai/shield.svg
+     :target: https://pyup.io/repos/github/shimakaze-git/kokkai/
      :alt: Updates
 
 * https://qiita.com/kenta1984/items/1acfddb3d920a11e6c8b
@@ -28,7 +28,7 @@ Python Boilerplate contains all the boilerplate you need to create a Python pack
 
 
 * Free software: MIT license
-* Documentation: https://kokkai-py.readthedocs.io.
+* Documentation: https://kokkai.readthedocs.io.
 
 
 Features

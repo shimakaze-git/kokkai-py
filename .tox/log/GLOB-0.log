@@ -1,0 +1,99 @@
+action: GLOB, msg: packaging
+cwd: /workspaces/kokkai-py
+cmd: /usr/local/bin/python setup.py sdist --formats=zip --dist-dir /workspaces/kokkai-py/.tox/dist
+running sdist
+running egg_info
+creating kokkai.egg-info
+writing kokkai.egg-info/PKG-INFO
+writing dependency_links to kokkai.egg-info/dependency_links.txt
+writing entry points to kokkai.egg-info/entry_points.txt
+writing requirements to kokkai.egg-info/requires.txt
+writing top-level names to kokkai.egg-info/top_level.txt
+writing manifest file 'kokkai.egg-info/SOURCES.txt'
+reading manifest file 'kokkai.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no previously-included files matching '__pycache__' found under directory '*'
+warning: no previously-included files matching '*.py[co]' found under directory '*'
+warning: no files found matching '*.jpg' under directory 'docs'
+warning: no files found matching '*.png' under directory 'docs'
+warning: no files found matching '*.gif' under directory 'docs'
+adding license file 'LICENSE'
+adding license file 'AUTHORS.rst'
+writing manifest file 'kokkai.egg-info/SOURCES.txt'
+running check
+creating kokkai-0.1.0
+creating kokkai-0.1.0/docs
+creating kokkai-0.1.0/kokkai
+creating kokkai-0.1.0/kokkai.egg-info
+creating kokkai-0.1.0/tests
+copying files to kokkai-0.1.0...
+copying AUTHORS.rst -> kokkai-0.1.0
+copying CONTRIBUTING.rst -> kokkai-0.1.0
+copying HISTORY.rst -> kokkai-0.1.0
+copying LICENSE -> kokkai-0.1.0
+copying MANIFEST.in -> kokkai-0.1.0
+copying README.rst -> kokkai-0.1.0
+copying setup.cfg -> kokkai-0.1.0
+copying setup.py -> kokkai-0.1.0
+copying docs/Makefile -> kokkai-0.1.0/docs
+copying docs/authors.rst -> kokkai-0.1.0/docs
+copying docs/conf.py -> kokkai-0.1.0/docs
+copying docs/contributing.rst -> kokkai-0.1.0/docs
+copying docs/history.rst -> kokkai-0.1.0/docs
+copying docs/index.rst -> kokkai-0.1.0/docs
+copying docs/installation.rst -> kokkai-0.1.0/docs
+copying docs/make.bat -> kokkai-0.1.0/docs
+copying docs/readme.rst -> kokkai-0.1.0/docs
+copying docs/usage.rst -> kokkai-0.1.0/docs
+copying kokkai/__init__.py -> kokkai-0.1.0/kokkai
+copying kokkai/cli.py -> kokkai-0.1.0/kokkai
+copying kokkai/kokkai.py -> kokkai-0.1.0/kokkai
+copying kokkai.egg-info/PKG-INFO -> kokkai-0.1.0/kokkai.egg-info
+copying kokkai.egg-info/SOURCES.txt -> kokkai-0.1.0/kokkai.egg-info
+copying kokkai.egg-info/dependency_links.txt -> kokkai-0.1.0/kokkai.egg-info
+copying kokkai.egg-info/entry_points.txt -> kokkai-0.1.0/kokkai.egg-info
+copying kokkai.egg-info/not-zip-safe -> kokkai-0.1.0/kokkai.egg-info
+copying kokkai.egg-info/requires.txt -> kokkai-0.1.0/kokkai.egg-info
+copying kokkai.egg-info/top_level.txt -> kokkai-0.1.0/kokkai.egg-info
+copying tests/__init__.py -> kokkai-0.1.0/tests
+copying tests/test_kokkai.py -> kokkai-0.1.0/tests
+Writing kokkai-0.1.0/setup.cfg
+creating /workspaces/kokkai-py/.tox/dist
+creating '/workspaces/kokkai-py/.tox/dist/kokkai-0.1.0.zip' and adding 'kokkai-0.1.0' to it
+adding 'kokkai-0.1.0'
+adding 'kokkai-0.1.0/tests'
+adding 'kokkai-0.1.0/kokkai.egg-info'
+adding 'kokkai-0.1.0/kokkai'
+adding 'kokkai-0.1.0/docs'
+adding 'kokkai-0.1.0/setup.py'
+adding 'kokkai-0.1.0/PKG-INFO'
+adding 'kokkai-0.1.0/setup.cfg'
+adding 'kokkai-0.1.0/AUTHORS.rst'
+adding 'kokkai-0.1.0/LICENSE'
+adding 'kokkai-0.1.0/README.rst'
+adding 'kokkai-0.1.0/CONTRIBUTING.rst'
+adding 'kokkai-0.1.0/MANIFEST.in'
+adding 'kokkai-0.1.0/HISTORY.rst'
+adding 'kokkai-0.1.0/tests/__init__.py'
+adding 'kokkai-0.1.0/tests/test_kokkai.py'
+adding 'kokkai-0.1.0/kokkai.egg-info/requires.txt'
+adding 'kokkai-0.1.0/kokkai.egg-info/PKG-INFO'
+adding 'kokkai-0.1.0/kokkai.egg-info/entry_points.txt'
+adding 'kokkai-0.1.0/kokkai.egg-info/SOURCES.txt'
+adding 'kokkai-0.1.0/kokkai.egg-info/dependency_links.txt'
+adding 'kokkai-0.1.0/kokkai.egg-info/top_level.txt'
+adding 'kokkai-0.1.0/kokkai.egg-info/not-zip-safe'
+adding 'kokkai-0.1.0/kokkai/__init__.py'
+adding 'kokkai-0.1.0/kokkai/kokkai.py'
+adding 'kokkai-0.1.0/kokkai/cli.py'
+adding 'kokkai-0.1.0/docs/readme.rst'
+adding 'kokkai-0.1.0/docs/make.bat'
+adding 'kokkai-0.1.0/docs/contributing.rst'
+adding 'kokkai-0.1.0/docs/conf.py'
+adding 'kokkai-0.1.0/docs/authors.rst'
+adding 'kokkai-0.1.0/docs/usage.rst'
+adding 'kokkai-0.1.0/docs/index.rst'
+adding 'kokkai-0.1.0/docs/Makefile'
+adding 'kokkai-0.1.0/docs/installation.rst'
+adding 'kokkai-0.1.0/docs/history.rst'
+removing 'kokkai-0.1.0' (and everything under it)

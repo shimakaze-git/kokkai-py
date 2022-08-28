@@ -9,7 +9,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=.
 set BUILDDIR=_build
-set SPHINXPROJ=kokkai_py
+set SPHINXPROJ=kokkai
 
 if "%1" == "" goto help
 

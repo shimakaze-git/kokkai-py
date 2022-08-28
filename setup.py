@@ -10,12 +10,12 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = [ ]
+requirements = ['Click>=7.0', ]
 
 test_requirements = ['pytest>=3', ]
 
 setup(
-    author="shimakaze-git",
+    author="shimakaze_soft",
     author_email='audreyr@example.com',
     python_requires='>=3.6',
     classifiers=[
@@ -31,19 +31,19 @@ setup(
     description="Python Boilerplate contains all the boilerplate you need to create a Python package.",
     entry_points={
         'console_scripts': [
-            'kokkai_py=kokkai_py.cli:main',
+            'kokkai=kokkai.cli:main',
         ],
     },
     install_requires=requirements,
     license="MIT license",
     long_description=readme + '\n\n' + history,
     include_package_data=True,
-    keywords='kokkai_py',
-    name='kokkai_py',
-    packages=find_packages(include=['kokkai_py', 'kokkai_py.*']),
+    keywords='kokkai',
+    name='kokkai',
+    packages=find_packages(include=['kokkai', 'kokkai.*']),
     test_suite='tests',
     tests_require=test_requirements,
-    url='https://github.com/shimakaze-git/kokkai_py',
+    url='https://github.com/shimakaze-git/kokkai',
     version='0.1.0',
     zip_safe=False,
 )
