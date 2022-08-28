@@ -19,6 +19,11 @@ kokkai
      :alt: Updates
 
 * https://qiita.com/kenta1984/items/1acfddb3d920a11e6c8b
+* https://kokkai.ndl.go.jp/api.html
+* https://github.com/Shopify/shopify_python_api
+* https://tm200.hatenablog.com/entry/2022/02/21/233055
+* https://qiita.com/mintak21/items/037c9ae39a0db16a0d4e
+
 
 * 国会での発言回数
 * 国会での発言内容
